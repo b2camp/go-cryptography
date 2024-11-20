@@ -14,9 +14,8 @@ The examples cover encryption, decryption, hashing, and digital signature operat
   - [4. Hashing with SHA-256](#4-hashing-with-sha-256)
   - [5. HMAC](#5-hmac)
   - [6. Base64 Encoding/Decoding](#6-base64-encodingdecoding)
-  - [7. PBKDF2 for Password Hashing](#7-pbkdf2-for-password-hashing)
-  - [8. Digital Signature with RSA](#8-digital-signature-with-rsa)
-  - [9. Keccak256 Hash](#9-keccak256-hash)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -45,9 +44,9 @@ AES (Advanced Encryption Standard) is a fast and secure symmetric encryption alg
 - **Key Size**: 128-bit, 192-bit, or 256-bit.
 - **Use Case**: Data encryption where both parties share the same key.
 
-Example: `aes`
+Example: `aes.go`
 ```bash
-go run aes/example.go
+go run aes.go
 ```
 
 ---
@@ -59,9 +58,9 @@ RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem for secure data tra
 - **Key Size**: Commonly 2048-bit or 4096-bit.
 - **Use Case**: Encrypt messages, secure key exchanges.
 
-Example: `rsa`
+Example: `rsa.go`
 ```bash
-go run rsa/example.go
+go run rsa.go
 ```
 
 ---
@@ -72,9 +71,9 @@ ECC provides efficient cryptography with smaller keys. It's widely used in block
 
 - **Use Case**: Generate keys, sign messages, verify signatures.
 
-Example: `ecc`
+Example: `ecc.go`
 ```bash
-go run ecc/example.go
+go run ecc.go
 ```
 
 ---
@@ -85,9 +84,9 @@ Generate a SHA-256 hash for message integrity verification.
 
 - **Use Case**: Verify data integrity, store secure hashes of passwords.
 
-Example: `sha256`
+Example: `sha256.go`
 ```bash
-go run sha256/example.go
+go run sha256.go
 ```
 
 ---
@@ -98,9 +97,9 @@ HMAC (Hash-Based Message Authentication Code) provides message authentication us
 
 - **Use Case**: Verify the authenticity and integrity of messages.
 
-Example: `hmac`
+Example: `hmac.go`
 ```bash
-go run hmac/example.go
+go run hmac.go
 ```
 
 ---
@@ -111,48 +110,7 @@ Base64 encoding is used to safely transmit binary data as text.
 
 - **Use Case**: Encode binary data into text for storage or transmission.
 
-Example: `base64`
+Example: `base64.go`
 ```bash
-go run base64/example.go
+go run base64.go
 ```
-
----
-
-### 7. PBKDF2 for Password Hashing
-
-PBKDF2 derives secure keys from passwords using a salt.
-
-- **Use Case**: Securely store passwords.
-
-Example: `pbkdf2`
-```bash
-go run pbkdf2/example.go
-```
-
----
-
-### 8. Digital Signature with RSA
-
-Generate and verify digital signatures using RSA.
-
-- **Use Case**: Authenticate the origin of messages.
-
-Example: `rsa_signature`
-```bash
-go run rsa_signature/example.go
-```
-
----
-
-### 9. Keccak256 Hash
-
-Keccak256 is used for hashing in Ethereum and other blockchain platforms.
-
-- **Use Case**: Generate hashes for Ethereum addresses, function signatures, etc.
-
-Example: `keccak256`
-```bash
-go run keccak256/example.go
-```
-
----
